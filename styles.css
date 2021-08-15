@@ -1,0 +1,15 @@
+.top-container {
+  background-image: url("./src/images/banner.jpeg");
+  width: 100%;
+  background-size: cover;
+  background-position: center, center;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+}

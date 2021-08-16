@@ -5,32 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>CSS Clone</title>
 </head>
 <body>
     <div class="top-container">
         <header>
             <div class="home-link">
-                <img id="logo"src="/src/images/navbar-logo.svg"/>
+                <img id="logo"src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg"/>
             </div>
             <div class="nav-links">
-                <h2>Services</h2>
-                <h2>Portfolio</h2>
-                <h2>About</h2>
-                <h2>Team</h2>
-                <h2>Contact</h2>
+                <a href="#services">
+                    <p>SERVICES</p>
+                </a>
+                <a href="#portfolio">
+                    <p>PORTFOLIO</p>
+                </a>
+                <a href="#about">
+                    <p>ABOUT</p>
+                </a>
+                <a href="#team">
+                    <p>TEAM</p>
+                 </a>
+                <a href="#contact">
+                    <p>CONTACT</p>
+                </a>
+
             </div>
         </header>
         <div class="welcome-banner">
-            <h3>Welcome To Our Studio</h3>
-            <h1>IT'S NICE TO MEET YOU </h1>
-            <button>TELL ME MORE!</button>
+            <p id="cursive">Welcome To Our Studio!</p>
+            <p id="big">IT'S NICE TO MEET YOU </p>
+            <button>TELL ME MORE</button>
         </div>  
     </div>
-    <div class="services"></div>
-    <div class="portfolio"></div>
-    <div class="about"></div>
-    <div class="team"></div>
-    <div class="contact"></div>
+    <div class="services" id="services">
+        <div class="top">
+            <h2 class="title">SERVICES</h2>
+            <p class="gray-text" id="mini-description">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="bottom">
+            <div class="cart">
+                <div class="circle">
+                    <img src="./src/images/shopping-cart-solid.svg"/>
+                </div>
+                <h4>E-Commerce</h4>
+                <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis quaerat saepe tempore natus quisquam itaque inventore, eveniet a ea repellendus commodi, est voluptatem, iusto impedit unde nostrum fuga earum?</p>
+            </div>
+            <div class="comp">
+                <div class="circle">
+                    <img src="./src/images/laptop-solid.svg"/>
+                </div>
+                <h4>Responsive Design</h4>
+                <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis quaerat saepe tempore natus quisquam itaque inventore, eveniet a ea repellendus commodi, est voluptatem, iusto impedit unde nostrum fuga earum?</p>
+            </div>
+            <div class="security">
+                <div class="circle">
+                    <img src="./src/images/lock-solid.svg"/>
+                </div>
+                <h4>Web Security</h4>
+                <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis quaerat saepe tempore natus quisquam itaque inventore, eveniet a ea repellendus commodi, est voluptatem, iusto impedit unde nostrum fuga earum?</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="top">
+            <h2 class="title">PORTFOLIO</h2>
+            <p class="gray-text" id="mini-description">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+    </div>
+    <div class="about" id="class">
+
+    </div>
+    <div class="team" id="team">
+
+    </div>
+    <div class="contact" id="contact">
+
+    </div>
 </body>
 </html>

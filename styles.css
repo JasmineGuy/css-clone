@@ -73,6 +73,7 @@ header {
   cursor: pointer;
 }
 #big {
+  font-family: "Montserrat", sans-serif;
   font-size: 72px;
   font-weight: 700;
   margin: 0 0 64px;
@@ -150,7 +151,7 @@ header {
   flex-direction: column;
   align-items: center;
   height: 1500px;
-  width: 85%;
+  /* width: 85%; */
   background-color: #f8f9fa;
   margin: auto;
 }
@@ -215,4 +216,55 @@ header {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: -10px;
+}
+
+.about {
+  width: 100%;
+  background: white;
+}
+.team {
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-between;
+}
+.team-display {
+  display: flex;
+  height: 500px;
+  width: 90vw;
+  margin: auto;
+  padding: 3rem;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  margin: auto;
+}
+.feature img {
+  object-fit: cover;
+  height: 215px;
+  width: 215px;
+  border-radius: 50%;
+  border: 7px solid #dfe0e1;
+}
+.feature .italic {
+  margin-top: -15px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+}
+.feature h2 {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+}
+.team-bottom {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+  width: 80vw;
 }

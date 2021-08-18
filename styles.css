@@ -1,3 +1,9 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 .top-container {
   background-image: url("./src/images/banner.jpeg");
   width: 100%;
@@ -7,8 +13,9 @@
   text-align: center;
   background-repeat: no-repeat;
   width: 100%;
+  /* position: relative; */
 }
-header {
+body header {
   margin-left: 1rem;
   margin-right: 1rem;
   height: 10vh;
@@ -20,7 +27,9 @@ header {
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
+  /* border: 1px solid red; */
   position: sticky;
+  top: 0;
 }
 #logo {
   width: 185px;
@@ -61,7 +70,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
-  width: 35%;
+  width: 50%;
   margin-right: 3rem;
 }
 .nav-links a {
@@ -139,13 +148,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  /* color: white; */
 }
 .circle img {
   height: 75px;
   width: 75px;
-  color: white;
+  color: rgb(56, 48, 48);
 }
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -176,6 +186,9 @@ header {
   width: 100%;
   height: 65%;
 }
+.row1 img:hover {
+  background-image: ;
+}
 .row-2 img {
   width: 100%;
   height: 65%;
@@ -189,6 +202,7 @@ header {
   background: white;
   box-shadow: 0 0 0 0.2;
   margin: 1rem;
+  /* padding: 1rem; */
 }
 .row-2 .card {
   display: flex;
@@ -200,11 +214,7 @@ header {
   box-shadow: 0 0 0 0.5;
   margin: 1rem;
 }
-/* .card img:hover {
-  background: rgba(255, 200, 0, 0.9);
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-} */
+
 .italic {
   font-family: "Roboto Slab", serif;
   font-style: italic;
@@ -220,7 +230,7 @@ header {
 
 .about {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: visible;
   background: white;
   margin-bottom: 100px;
@@ -228,63 +238,40 @@ header {
 }
 .content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   position: relative;
-  height: 80%;
-  border: 1px solid red;
+  height: 1000px;
+  margin: 1rem;
+  position: relative;
 }
 .line {
   width: 2px;
+  height: 610px;
   background-color: gray;
-  height: 600px;
-  margin: auto;
   position: absolute;
+  margin-left: 6rem;
+  margin-top: 10rem;
 }
-.left {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.left p {
-  margin-top: -15px;
-  text-align: right;
-}
-.left h2 {
-  text-align: right;
-}
-.left,
-.middle,
-.right {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.middle .timeline-photos {
+.timeline-photos {
   object-fit: cover;
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   border-radius: 50%;
   border: 5px solid #dfe0e1;
-  /* position: absolute; */
+  margin: 2rem;
 }
-.middle {
+.event-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid red;
+  width: 50%;
 }
-.right p {
-  margin-top: -15px;
-  text-align: left;
+.first-event,
+.second-event,
+.third-event,
+.fourth-event {
+  display: flex;
 }
-.right h2 {
-  text-align: left;
-  font-size: 24px;
-}
+
 .team {
   height: 100vh;
   background-color: #f8f9fa;
@@ -330,4 +317,50 @@ header {
   margin: auto;
   margin-bottom: 5rem;
   width: 80vw;
+}
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.icons img {
+  height: 25px;
+  width: 25px;
+  border: 2px solid black;
+  margin: 0.5rem;
+}
+.icons img:hover {
+  cursor: pointer;
+}
+.contact {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  height: 80vh;
+}
+.contact-title {
+  font-size: 2.5rem;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 0.25rem;
+}
+form .left {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+form input {
+  height: 60px;
+  width: 365px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: gray;
+}
+form .right input {
+  height: 190px;
+  width: 250px;
 }
